@@ -39,3 +39,25 @@ nav a {
   border-radius: 6px;
   font-weight: bold;
 }
+
+.story-arcs {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.story-arcs h2 {
+  text-align: center;
+}
+
+.story-arcs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.story-arcs li {
+  background: #1b1b33;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+}
