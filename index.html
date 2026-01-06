@@ -112,6 +112,114 @@
   <div class="container">
 
     <div id="saved" class="saved-message">
+      ✅ Information saved successfully. Redirecting...
+    </div>
+
+    <h1>Welcome to Re:Zero Info</h1>
+
+    <p>
+      Re:Zero Info is a fan-made website created for anime lovers who want to
+      explore the world of <strong>Re:Zero – Starting Life in Another World</strong>.
+    </p>
+
+    <p>
+      This introduction page welcomes new visitors. Your information is never stored.
+    </p>
+
+    <h2>Introduce Yourself</h2>
+
+    <form onsubmit="enterSite(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="age">Your Age</label>
+      <input type="number" id="age" placeholder="Enter your age" required>
+
+      <button type="submit">Enter</button>
+    </form>
+
+    <div class="whatsapp">
+      <h2>Join Our WhatsApp Community</h2>
+      <p>
+        Want more Re:Zero updates, discussions, and help?
+        Join our WhatsApp community.
+      </p>
+
+      <a href="https://chat.whatsapp.com/EJjjbFxlRx0KIpDwpzpRD1" target="_blank">
+        Join WhatsApp Community
+      </a>
+    </div>
+
+    <footer>
+      Fan-made website. Re:Zero belongs to its respective creators.
+    </footer>
+
+  </div>
+
+  <script>
+    function enterSite(event) {
+      event.preventDefault();
+      document.getElementById("saved").style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      setTimeout(() => {
+        window.location.href = "characters.html";
+      }, 1200);
+    }
+  </script>
+
+</body>
+</html>    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #5865F2;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .whatsapp {
+      margin-top: 40px;
+      background: #1b1b33;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .whatsapp a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #25D366;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div id="saved" class="saved-message">
       ✅ Information saved successfully
     </div>
 
