@@ -2,54 +2,211 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | Re:Zero Info</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Welcome | Re:Zero Info</title>
+  <meta name="description" content="Extensive fan-made Re:Zero introduction and community hub">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0e0e1a;
+      color: #ffffff;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      color: #8f8fff;
+      text-align: center;
+    }
+
+    .saved-message {
+      display: none;
+      background: #1f8f5f;
+      padding: 12px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    p {
+      margin-bottom: 18px;
+      text-align: justify;
+    }
+
+    form {
+      background: #1b1b33;
+      padding: 25px;
+      border-radius: 12px;
+      margin-top: 50px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 14px;
+      background: #5865F2;
+      border: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .whatsapp {
+      margin-top: 60px;
+      background: #1b1b33;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .whatsapp a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 22px;
+      background: #25D366;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      opacity: 0.7;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="characters.html">Characters</a>
-    <a href="story.html">Story</a>
-    <a href="about.html">About</a>
-  </nav>
+<div class="container">
 
-  <!-- Top Image -->
-  <header class="top-banner">
-    <img src="https://files.catbox.moe/y6kysz.jpg" alt="Re:Zero About">
-  </header>
+  <div id="saved" class="saved-message">
+    ✅ Information saved successfully. Redirecting to characters...
+  </div>
 
-  <!-- About Content -->
-  <section class="intro">
-    <h1>About This Website</h1>
+  <h1>Welcome to Re:Zero Info</h1>
+
+  <h2>An Extensive Fan Introduction</h2>
+
+  <p>
+    Re:Zero Info is a long-form, fan-made informational website dedicated to the anime
+    and light novel series <strong>Re:Zero – Starting Life in Another World</strong>.
+    This site was created to serve as a central hub for fans who wish to explore the
+    story, characters, themes, timelines, lore, and emotional depth of the Re:Zero universe.
+  </p>
+
+  <p>
+    Re:Zero is not a simple isekai story. It is a psychological, emotional, and often brutal
+    narrative that explores suffering, hope, despair, self-worth, sacrifice, and personal growth.
+    This website exists to respect that depth and provide structured information in a calm,
+    readable, and community-focused way.
+  </p>
+
+  <p>
+    The protagonist, Subaru Natsuki, is suddenly transported from modern Japan into a fantasy
+    world without explanation. Unlike traditional heroes, Subaru does not gain overwhelming power.
+    Instead, he receives a curse known as <em>Return by Death</em>, forcing him to relive time
+    whenever he dies. This mechanic shapes the entire narrative and emotional core of the series.
+  </p>
+
+  <p>
+    Over time, Subaru encounters many characters — Emilia, Rem, Ram, Beatrice, Roswaal,
+    Otto, Garfiel, and many others — each with their own motivations, traumas, and goals.
+    The story does not glorify suffering, but instead forces characters to confront it.
+  </p>
+
+  <p>
+    This website is designed for both new viewers and long-time fans. If you are new,
+    you can learn about characters and story arcs at your own pace. If you are experienced,
+    you can revisit lore details, symbolism, and discussions shared by the community.
+  </p>
+
+  <p>
+    We believe Re:Zero is best enjoyed when discussed with others. That is why this site
+    also focuses on community-building. We do not track users, we do not store personal data,
+    and we do not require accounts. This introduction page simply welcomes you.
+  </p>
+
+  <p>
+    The themes of Re:Zero include self-forgiveness, the danger of escapism, the weight of expectations,
+    and the importance of accepting help from others. Subaru’s journey is not about becoming perfect,
+    but about learning to stand up again after failure.
+  </p>
+
+  <p>
+    This site is continuously evolving. New pages may be added for timelines, world lore,
+    witch factors, authorities, and future arcs. All content here is written with respect
+    to the original creators.
+  </p>
+
+  <h2>Introduce Yourself</h2>
+
+  <form onsubmit="enterSite(event)">
+    <label>Your Name</label>
+    <input type="text" required>
+
+    <label>Your Age</label>
+    <input type="number" required>
+
+    <button type="submit">Enter</button>
+  </form>
+
+  <div class="whatsapp">
+    <h2>Join Our WhatsApp Community</h2>
     <p>
-      <strong>Re:Zero Info</strong> is a fan-made website created to share information
-      about the anime and light novel series
-      <em>Re:Zero − Starting Life in Another World</em>.
+      For discussions, updates, help, and community interaction, join our official
+      Re:Zero Info WhatsApp group. This is the fastest way to connect with fans and the team.
     </p>
 
-    <p>
-      This website was made for fans who want to learn more about the story,
-      characters, and world of Re:Zero in one place.
-      We also aim to build a friendly community where fans can talk, share ideas,
-      and grow together.
-    </p>
-
-    <p>
-      This is <strong>not an official website</strong>.
-      Re:Zero and all related content belong to their respective creators.
-    </p>
-
-    <!-- Discord Link -->
-    <a
-      class="discord-link"
-      href="https://discord.gg/https://discord.gg/cqz3RNtwY" 
-      target="_blank"
-    >
-      💬 Join Our Discord Community
+    <a href="https://chat.whatsapp.com/EJjjbFxlRx0KIpDwpzpRD1" target="_blank">
+      Join WhatsApp Community
     </a>
-  </section>
+  </div>
+
+  <footer>
+    Fan-made website. Re:Zero and all related content belong to their respective creators.
+  </footer>
+
+</div>
+
+<script>
+  function enterSite(event) {
+    event.preventDefault();
+    document.getElementById("saved").style.display = "block";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    setTimeout(() => {
+      window.location.href = "characters.html";
+    }, 1200);
+  }
+</script>
 
 </body>
-  </html>
+</html>
