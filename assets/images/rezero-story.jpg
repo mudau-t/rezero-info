@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Re:Zero Story</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="characters.html">Characters</a>
+    <a href="story.html">Story</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <!-- Top Anime Image -->
+  <header class="top-banner">
+    <img src="https://files.catbox.moe/y6kysz.jpg" alt="Re:Zero Story">
+  </header>
+
+  <!-- Story Intro -->
+  <section class="intro">
+    <h1>Re:Zero Story</h1>
+    <p>
+      <strong>Re:Zero − Starting Life in Another World</strong> follows Subaru Natsuki,
+      a boy summoned to a fantasy world where death is not the end.
+      With the power of <em>Return by Death</em>, Subaru relives painful timelines
+      to save the people he loves.
+    </p>
+
+    <a
+      class="discord-link"
+      href="https://discord.gg/https://discord.gg/cqz3RNtwY"
+      target="_blank"
+    >
+      💬 Join our Discord Server
+    </a>
+  </section>
+
+  <!-- Story Arcs -->
+  <section class="story-arcs">
+    <h2>Main Story Arcs</h2>
+    <ul>
+      <li><strong>Arc 1:</strong> Capital City</li>
+      <li><strong>Arc 2:</strong> Roswaal Mansion</li>
+      <li><strong>Arc 3:</strong> Royal Selection</li>
+      <li><strong>Arc 4:</strong> Sanctuary</li>
+      <li><strong>Arc 5:</strong> Priestella</li>
+      <li><strong>Arc 6:</strong> Pleiades Watchtower</li>
+    </ul>
+  </section>
+
+</body>
+</html>
