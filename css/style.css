@@ -1,40 +1,144 @@
+/* ===== Base ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #0e0e1a;
   color: #ffffff;
+  font-size: 16px;
 }
 
+/* ===== Navigation ===== */
 nav {
   background: #15152b;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
 }
 
 nav a {
   color: #ffffff;
-  margin: 0 10px;
+  margin: 0 8px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 15px;
 }
 
+/* ===== Banner Image ===== */
 .top-banner img {
   width: 100%;
-  height: auto;
+  max-height: 220px;   /* 🔥 FIX: no giant image */
+  object-fit: cover;
   display: block;
 }
 
+/* ===== Intro Section ===== */
 .intro {
   text-align: center;
-  padding: 30px;
+  padding: 20px 15px; /* 🔥 smaller padding */
 }
 
+.intro h1 {
+  margin-bottom: 10px;
+}
+
+/* ===== Discord Button ===== */
 .discord-link {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
+  margin-top: 15px;
+  padding: 10px 18px;
   background: #5865F2;
   color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* ===== Story Arcs ===== */
+.story-arcs {
+  padding: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.story-arcs h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.story-arcs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.story-arcs li {
+  background: #1b1b33;
+  margin: 8px 0;     /* 🔥 closer together */
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* ===== Characters Page ===== */
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.character-card {
+  background: #1b1b33;
+  border-radius: 10px;
+  padding: 12px;
+  max-width: 240px;
+  text-align: center;
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ===== Support Page ===== */
+.support-section {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 15px; /* 🔥 tighter spacing */
+  line-height: 1.6;
+}
+
+.support-section h1,
+.support-section h2 {
+  color: #8f8fff;
+}
+
+.whatsapp-list {
+  padding-left: 20px;
+}
+
+.whatsapp-list li {
+  margin: 8px 0;
+}
+
+.whatsapp-list a {
+  color: #25D366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ===== Mobile Tweaks ===== */
+@media (max-width: 600px) {
+  nav a {
+    font-size: 14px;
+    margin: 0 6px;
+  }
+
+  .character-card {
+    max-width: 100%;
+  }
+}  color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
