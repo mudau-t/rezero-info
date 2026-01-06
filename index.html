@@ -2,22 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Re:Zero Info</title>
-  <meta name="description" content="Fan-made Re:Zero information website">
+  <title>Welcome | Re:Zero Info</title>
+  <meta name="description" content="Fan-made Re:Zero introduction page">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0e0e1a;
+      color: #ffffff;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h1, h2 {
+      color: #8f8fff;
+      text-align: center;
+    }
+
+    .saved-message {
+      display: none;
+      background: #1f8f5f;
+      color: #ffffff;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    form {
+      background: #1b1b33;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #5865F2;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .whatsapp {
+      margin-top: 40px;
+      background: #1b1b33;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .whatsapp a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #25D366;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
-  <h1>Re:Zero – Information Hub</h1>
-  <p>This is a fan-made informational site about Re:Zero.</p>
 
-  <h2>Sections</h2>
-  <ul>
-    <li>Characters</li>
-    <li>Timeline</li>
-    <li>World & Lore</li>
-  </ul>
+  <div class="container">
 
-  <footer>
-    <p>Fan-made site. Re:Zero belongs to its original creators.</p>
-  </footer>
+    <div id="saved" class="saved-message">
+      ✅ Information saved successfully
+    </div>
+
+    <h1>Welcome to Re:Zero Info</h1>
+
+    <p>
+      Re:Zero Info is a fan-made website created for anime lovers who want to
+      explore the world of <strong>Re:Zero – Starting Life in Another World</strong>.
+      Here you can learn more about the characters, story arcs, lore, and future updates.
+    </p>
+
+    <p>
+      This website is made by fans, for fans. No accounts are required, and your
+      information is never stored. This introduction page helps us welcome new visitors
+      into the community.
+    </p>
+
+    <h2>Introduce Yourself</h2>
+
+    <form onsubmit="showSavedMessage(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="age">Your Age</label>
+      <input type="number" id="age" placeholder="Enter your age" required>
+
+      <button type="submit">Save</button>
+    </form>
+
+    <div class="whatsapp">
+      <h2>Join Our WhatsApp Community</h2>
+      <p>
+        Want more Re:Zero updates, discussions, and help?
+        Join our WhatsApp community to connect with other fans and the team.
+      </p>
+
+      <a href="https://chat.whatsapp.com/EJjjbFxlRx0KIpDwpzpRD1" target="_blank">
+        Join WhatsApp Community
+      </a>
+    </div>
+
+    <footer>
+      <p>
+        Fan-made website. Re:Zero and all related content belong to their respective creators.
+      </p>
+    </footer>
+
+  </div>
+
+  <script>
+    function showSavedMessage(event) {
+      event.preventDefault();
+      document.getElementById("saved").style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+
 </body>
 </html>
